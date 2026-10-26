@@ -46,31 +46,31 @@ func _on_Gen_button_down():
 			if(randi()&1 == 0):
 				$OutContainer/Output.text += " " + lista_palabras5[0]
 				
-			lista_palabras5.remove(0) 
+			lista_palabras5.pop_front() 
 		
 		if(lista_palabras6.size() > 0):
 			if(randi()&1 == 0):
 				$OutContainer/Output.text += " " + lista_palabras6[0]
 			
-			lista_palabras6.remove(0) 
+			lista_palabras6.pop_front()
 			
 		if(lista_palabras2.size() > 0):
 			if(randi()&1 == 0):
 				$OutContainer/Output.text += " " + lista_palabras2[0] 
 				
-			lista_palabras2.remove(0)
+			lista_palabras2.pop_front()
 		
 		if(lista_palabras3.size() > 0):
 			if(randi()&1 == 0):
 				$OutContainer/Output.text += " " + lista_palabras3[0] 
 				
-			lista_palabras3.remove(0)
+			lista_palabras3.pop_front()
 			
 		if(lista_palabras4.size() > 0):
 			if(randi()&1 == 0):
 				$OutContainer/Output.text += " " + lista_palabras4[0]
 				
-			lista_palabras4.remove(0) 
+			lista_palabras4.pop_front()
 		
 
 		

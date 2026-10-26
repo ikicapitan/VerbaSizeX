@@ -1,176 +1,139 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene format=3 uid="uid://bbswx417ckixt"]
 
-[ext_resource path="res://Sizer.gd" type="Script" id=1]
+[ext_resource type="Script" uid="uid://bopdki3xds55v" path="res://Sizer.gd" id="1"]
 
-[node name="main" type="Node2D"]
+[node name="main" type="Node2D" unique_id=1320852452]
 
-[node name="Sizer" type="Control" parent="."]
+[node name="Sizer" type="Control" parent="." unique_id=433685025]
+layout_mode = 3
+anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 32.0
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("1")
 
-[node name="title" type="Label" parent="Sizer"]
+[node name="title" type="Label" parent="Sizer" unique_id=54645342]
+layout_mode = 0
 offset_left = 338.705
 offset_top = 7.48421
 offset_right = 422.705
 offset_bottom = 24.4842
-scale = Vector2( 4, 4 )
+scale = Vector2(4, 4)
 text = "VERBA SIZE X"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="T1" type="TextEdit" parent="Sizer"]
+[node name="T1" type="TextEdit" parent="Sizer" unique_id=1680042592]
+layout_mode = 0
 offset_left = 28.2063
 offset_top = 105.206
 offset_right = 181.206
 offset_bottom = 422.206
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="T2" type="TextEdit" parent="Sizer"]
+[node name="T2" type="TextEdit" parent="Sizer" unique_id=857635285]
+layout_mode = 0
 offset_left = 191.794
 offset_top = 106.0
 offset_right = 344.794
 offset_bottom = 423.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="T3" type="TextEdit" parent="Sizer"]
+[node name="T3" type="TextEdit" parent="Sizer" unique_id=1129347352]
+layout_mode = 0
 offset_left = 352.0
 offset_top = 106.0
 offset_right = 505.0
 offset_bottom = 423.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="T4" type="TextEdit" parent="Sizer"]
+[node name="T4" type="TextEdit" parent="Sizer" unique_id=656918581]
+layout_mode = 0
 offset_left = 512.0
 offset_top = 106.0
 offset_right = 665.0
 offset_bottom = 423.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="T5" type="TextEdit" parent="Sizer"]
+[node name="T5" type="TextEdit" parent="Sizer" unique_id=749062217]
+layout_mode = 0
 offset_left = 672.0
 offset_top = 106.0
 offset_right = 825.0
 offset_bottom = 423.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="T6" type="TextEdit" parent="Sizer"]
+[node name="T6" type="TextEdit" parent="Sizer" unique_id=1744118318]
+layout_mode = 0
 offset_left = 832.0
 offset_top = 106.0
 offset_right = 985.0
 offset_bottom = 423.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Gen" type="Button" parent="Sizer"]
+[node name="Gen" type="Button" parent="Sizer" unique_id=1047213926]
+layout_mode = 0
 offset_left = 390.627
 offset_top = 449.071
 offset_right = 545.627
 offset_bottom = 477.071
-scale = Vector2( 1.5, 1.5 )
+scale = Vector2(1.5, 1.5)
 text = "GENERAR"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="OutContainer" type="ScrollContainer" parent="Sizer"]
+[node name="OutContainer" type="ScrollContainer" parent="Sizer" unique_id=1158776081]
+layout_mode = 0
 offset_left = 14.0
 offset_top = 509.0
 offset_right = 992.0
 offset_bottom = 594.0
-scroll_horizontal_enabled = false
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Output" type="Label" parent="Sizer/OutContainer"]
-offset_bottom = 31.0
+[node name="Output" type="Label" parent="Sizer/OutContainer" unique_id=1844232272]
+layout_mode = 2
 text = "
 "
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Rotulos" type="Control" parent="Sizer"]
+[node name="Rotulos" type="Control" parent="Sizer" unique_id=1022308184]
+anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Org1" type="Label" parent="Sizer/Rotulos"]
+[node name="Org1" type="Label" parent="Sizer/Rotulos" unique_id=1447959430]
+layout_mode = 0
 offset_left = 62.7023
 offset_top = 85.7197
 offset_right = 153.702
 offset_bottom = 99.7197
 text = "PRONOMBRES"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Org2" type="Label" parent="Sizer/Rotulos"]
+[node name="Org2" type="Label" parent="Sizer/Rotulos" unique_id=1689804270]
+layout_mode = 0
 offset_left = 384.945
 offset_top = 87.3071
 offset_right = 475.945
 offset_bottom = 101.307
 text = "SUSTANTIVOS"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Org3" type="Label" parent="Sizer/Rotulos"]
+[node name="Org3" type="Label" parent="Sizer/Rotulos" unique_id=1613426319]
+layout_mode = 0
 offset_left = 244.46
 offset_top = 87.3071
 offset_right = 335.46
 offset_bottom = 101.307
 text = "VERBOS"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Org4" type="Label" parent="Sizer/Rotulos"]
+[node name="Org4" type="Label" parent="Sizer/Rotulos" unique_id=62181078]
+layout_mode = 0
 offset_left = 560.353
 offset_top = 86.5134
 offset_right = 651.353
 offset_bottom = 100.513
 text = "ADJETIVOS"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Org5" type="Label" parent="Sizer/Rotulos"]
+[node name="Org5" type="Label" parent="Sizer/Rotulos" unique_id=2085310034]
+layout_mode = 0
 offset_left = 724.649
 offset_top = 87.3071
 offset_right = 815.649
 offset_bottom = 101.307
 text = "VERBOS 2"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Org6" type="Label" parent="Sizer/Rotulos"]
+[node name="Org6" type="Label" parent="Sizer/Rotulos" unique_id=1923059739]
+layout_mode = 0
 offset_left = 887.357
 offset_top = 86.5134
 offset_right = 978.357
 offset_bottom = 100.513
 text = "OTROS"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [connection signal="button_down" from="Sizer/Gen" to="Sizer" method="_on_Gen_button_down"]
