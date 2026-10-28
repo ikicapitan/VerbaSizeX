@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://dkg8i68ap34hx"]
 
 [ext_resource type="Script" uid="uid://yg7g66pkt1m2" path="res://word_handler.gd" id="1_3bo3a"]
+[ext_resource type="FontFile" uid="uid://bsbbu2xjvem0q" path="res://Fonts/NotoSansJP-VariableFont_wght.ttf" id="2_8bye6"]
 
 [node name="WordHandler" type="VBoxContainer" unique_id=824105024]
 script = ExtResource("1_3bo3a")
 
 [node name="Entry" type="LineEdit" parent="." unique_id=370450816]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_8bye6")
 placeholder_text = "_"
 
 [node name="Scroll" type="ScrollContainer" parent="." unique_id=309088151]

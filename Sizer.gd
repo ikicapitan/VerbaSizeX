@@ -45,11 +45,16 @@ var translations = {
 @onready var gen_button: Button = $Gen
 @onready var title_label: Label = $title
 
+var japanese_font = preload("res://Fonts/NotoSansJP-VariableFont_wght.ttf")
+
+
 
 func _ready() -> void:
+	
 	out_dialog.ok_button_text = "OK"
 	output.deselect_on_focus_loss_enabled = false
 	copy_btn = out_dialog.add_button("", false, "copy")
+	copy_btn.add_theme_font_override("font", japanese_font)
 	out_dialog.custom_action.connect(_on_custom_action)
 	language_btn.pressed.connect(_on_language_btn_pressed)
 	view_btn.pressed.connect(_open_output)

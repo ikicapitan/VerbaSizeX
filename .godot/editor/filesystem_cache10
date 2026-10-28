@@ -1,6 +1,9 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1793162810
-main.tscn::PackedScene::2495146738803962545::1793064168::0::1::::<><><>0<>0<><>::uid://bopdki3xds55v::::res://Sizer.gd<>uid://dkg8i68ap34hx::::res://wordHandler.tscn
-Sizer.gd::GDScript::3400230634344891177::1793144902::0::1::::<>Control<><>0<>0<><>::
-wordHandler.tscn::PackedScene::7875556380320097673::1793145063::0::1::::<><><>0<>0<><>::uid://yg7g66pkt1m2::::res://word_handler.gd
-word_handler.gd::GDScript::1698873849177555443::1793019013::0::1::::WordHandler<>VBoxContainer<><>0<>0<><>::
+::res://::1793178642
+export_presets.cfg::TextFile::-1::1793177886::0::1::::<><><>0<>0<><>::
+main.tscn::PackedScene::2495146738803962545::1793177768::0::1::::<><><>0<>0<><>::uid://bopdki3xds55v::::res://Sizer.gd<>uid://dkg8i68ap34hx::::res://wordHandler.tscn
+Sizer.gd::GDScript::3400230634344891177::1793177691::0::1::::<>Control<><>0<>0<><>::
+wordHandler.tscn::PackedScene::7875556380320097673::1793176529::0::1::::<><><>0<>0<><>::uid://yg7g66pkt1m2::::res://word_handler.gd
+word_handler.gd::GDScript::1698873849177555443::1793176529::0::1::::WordHandler<>VBoxContainer<><>0<>0<><>::
+::res://Fonts/::1793178649
+NotoSansJP-VariableFont_wght.ttf::FontFile::3651982133900717410::1790894596::1793179031::1::::<><><>0<>0<>a64c3d9a0e3e7fec16b5743cbf4a5ab5<>res://.godot/imported/NotoSansJP-VariableFont_wght.ttf-9ea5da8c20d7bb16750f4b83075cbb0e.fontdata::

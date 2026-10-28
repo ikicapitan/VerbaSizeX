@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bopdki3xds55v" path="res://Sizer.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://dkg8i68ap34hx" path="res://wordHandler.tscn" id="2_0xm2m"]
+[ext_resource type="FontFile" uid="uid://bsbbu2xjvem0q" path="res://Fonts/NotoSansJP-VariableFont_wght.ttf" id="2_h2yge"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
 font_size = 62
@@ -22,6 +23,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -16.0
+offset_right = -50.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
@@ -37,10 +42,11 @@ label_settings = SubResource("LabelSettings_h2yge")
 
 [node name="Gen" type="Button" parent="Sizer" unique_id=1047213926]
 layout_mode = 0
-offset_left = 481.0
+offset_left = 425.0
 offset_top = 550.0
-offset_right = 681.0
+offset_right = 625.0
 offset_bottom = 600.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_0xm2m")
@@ -49,35 +55,39 @@ text = "GENERAR"
 
 [node name="LanguageBtn" type="Button" parent="Sizer" unique_id=1765068686]
 layout_mode = 0
-offset_left = 916.0
+offset_left = 860.0
 offset_top = 550.0
-offset_right = 1116.0
+offset_right = 1060.0
 offset_bottom = 600.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 theme_override_font_sizes/font_size = 20
 text = "LANGUAGE"
 
 [node name="ViewBtn" type="Button" parent="Sizer" unique_id=1497355202]
 layout_mode = 0
-offset_left = 794.0
+offset_left = 738.0
 offset_top = 550.0
-offset_right = 844.0
+offset_right = 788.0
 offset_bottom = 600.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 theme_override_font_sizes/font_size = 20
 
 [node name="ResetBtn" type="Button" parent="Sizer" unique_id=1956373364]
 layout_mode = 0
-offset_left = 133.0
+offset_left = 121.0
 offset_top = 550.0
-offset_right = 183.0
+offset_right = 171.0
 offset_bottom = 600.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 theme_override_font_sizes/font_size = 20
 
 [node name="ShuffleBtn" type="Button" parent="Sizer" unique_id=442914562]
 layout_mode = 0
-offset_left = 243.0
+offset_left = 231.0
 offset_top = 550.0
-offset_right = 293.0
+offset_right = 281.0
 offset_bottom = 600.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 theme_override_font_sizes/font_size = 20
 
 [node name="OutDialog" type="AcceptDialog" parent="Sizer" unique_id=1005592741]
@@ -96,6 +106,7 @@ offset_bottom = 508.0
 [node name="Output" type="TextEdit" parent="Sizer/OutDialog/OutContainer" unique_id=1857651583]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_h2yge")
 text = "
 "
 editable = false
@@ -113,6 +124,7 @@ offset_left = 48.0
 offset_top = 86.00001
 offset_right = 187.0
 offset_bottom = 114.00001
+theme_override_fonts/font = ExtResource("2_h2yge")
 text = "PRONOMBRES"
 label_settings = SubResource("LabelSettings_0xm2m")
 
@@ -122,6 +134,7 @@ offset_left = 370.2427
 offset_top = 86.0
 offset_right = 504.2427
 offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 text = "SUSTANTIVOS"
 label_settings = SubResource("LabelSettings_0xm2m")
 
@@ -131,6 +144,7 @@ offset_left = 229.7577
 offset_top = 86.0
 offset_right = 320.7577
 offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 text = "VERBOS"
 label_settings = SubResource("LabelSettings_0xm2m")
 
@@ -140,6 +154,7 @@ offset_left = 545.65076
 offset_top = 86.0
 offset_right = 647.65076
 offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 text = "ADJETIVOS"
 label_settings = SubResource("LabelSettings_0xm2m")
 
@@ -149,6 +164,7 @@ offset_left = 709.94666
 offset_top = 86.0
 offset_right = 802.94666
 offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 text = "VERBOS 2"
 label_settings = SubResource("LabelSettings_0xm2m")
 
@@ -158,6 +174,7 @@ offset_left = 872.65466
 offset_top = 86.0
 offset_right = 963.65466
 offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("2_h2yge")
 text = "OTROS"
 label_settings = SubResource("LabelSettings_0xm2m")
 
