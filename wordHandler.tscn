@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dkg8i68ap34hx"]
+
+[ext_resource type="Script" uid="uid://yg7g66pkt1m2" path="res://word_handler.gd" id="1_3bo3a"]
+
+[node name="WordHandler" type="VBoxContainer" unique_id=824105024]
+script = ExtResource("1_3bo3a")
+
+[node name="Entry" type="LineEdit" parent="." unique_id=370450816]
+layout_mode = 2
+placeholder_text = "_"
+
+[node name="Scroll" type="ScrollContainer" parent="." unique_id=309088151]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Rows" type="VBoxContainer" parent="Scroll" unique_id=1667918797]
+layout_mode = 2
+size_flags_horizontal = 3

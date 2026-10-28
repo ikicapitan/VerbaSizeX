@@ -1,4 +1,6 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792996825
-main.tscn::PackedScene::-1::1792996697::0::1::::<><><>0<>0<><>::res://Sizer.gd
-Sizer.gd::GDScript::3400230634344891177::1792996697::0::1::::<>Control<><>0<>0<><>::
+::res://::1793162810
+main.tscn::PackedScene::2495146738803962545::1793064168::0::1::::<><><>0<>0<><>::uid://bopdki3xds55v::::res://Sizer.gd<>uid://dkg8i68ap34hx::::res://wordHandler.tscn
+Sizer.gd::GDScript::3400230634344891177::1793144902::0::1::::<>Control<><>0<>0<><>::
+wordHandler.tscn::PackedScene::7875556380320097673::1793145063::0::1::::<><><>0<>0<><>::uid://yg7g66pkt1m2::::res://word_handler.gd
+word_handler.gd::GDScript::1698873849177555443::1793019013::0::1::::WordHandler<>VBoxContainer<><>0<>0<><>::

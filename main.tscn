@@ -1,139 +1,207 @@
 [gd_scene format=3 uid="uid://bbswx417ckixt"]
 
 [ext_resource type="Script" uid="uid://bopdki3xds55v" path="res://Sizer.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dkg8i68ap34hx" path="res://wordHandler.tscn" id="2_0xm2m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
+font_size = 62
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0xm2m"]
+font_size = 20
 
 [node name="main" type="Node2D" unique_id=1320852452]
 
 [node name="Sizer" type="Control" parent="." unique_id=433685025]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 32.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1")
 
 [node name="title" type="Label" parent="Sizer" unique_id=54645342]
 layout_mode = 0
-offset_left = 338.705
-offset_top = 7.48421
-offset_right = 422.705
-offset_bottom = 24.4842
-scale = Vector2(4, 4)
+offset_left = 365.0
+offset_top = 18.0
+offset_right = 466.0
+offset_bottom = 41.0
 text = "VERBA SIZE X"
-
-[node name="T1" type="TextEdit" parent="Sizer" unique_id=1680042592]
-layout_mode = 0
-offset_left = 28.2063
-offset_top = 105.206
-offset_right = 181.206
-offset_bottom = 422.206
-
-[node name="T2" type="TextEdit" parent="Sizer" unique_id=857635285]
-layout_mode = 0
-offset_left = 191.794
-offset_top = 106.0
-offset_right = 344.794
-offset_bottom = 423.0
-
-[node name="T3" type="TextEdit" parent="Sizer" unique_id=1129347352]
-layout_mode = 0
-offset_left = 352.0
-offset_top = 106.0
-offset_right = 505.0
-offset_bottom = 423.0
-
-[node name="T4" type="TextEdit" parent="Sizer" unique_id=656918581]
-layout_mode = 0
-offset_left = 512.0
-offset_top = 106.0
-offset_right = 665.0
-offset_bottom = 423.0
-
-[node name="T5" type="TextEdit" parent="Sizer" unique_id=749062217]
-layout_mode = 0
-offset_left = 672.0
-offset_top = 106.0
-offset_right = 825.0
-offset_bottom = 423.0
-
-[node name="T6" type="TextEdit" parent="Sizer" unique_id=1744118318]
-layout_mode = 0
-offset_left = 832.0
-offset_top = 106.0
-offset_right = 985.0
-offset_bottom = 423.0
+label_settings = SubResource("LabelSettings_h2yge")
 
 [node name="Gen" type="Button" parent="Sizer" unique_id=1047213926]
 layout_mode = 0
-offset_left = 390.627
-offset_top = 449.071
-offset_right = 545.627
-offset_bottom = 477.071
-scale = Vector2(1.5, 1.5)
+offset_left = 481.0
+offset_top = 550.0
+offset_right = 681.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0xm2m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h2yge")
 text = "GENERAR"
 
-[node name="OutContainer" type="ScrollContainer" parent="Sizer" unique_id=1158776081]
+[node name="LanguageBtn" type="Button" parent="Sizer" unique_id=1765068686]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 509.0
-offset_right = 992.0
-offset_bottom = 594.0
+offset_left = 916.0
+offset_top = 550.0
+offset_right = 1116.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 20
+text = "LANGUAGE"
 
-[node name="Output" type="Label" parent="Sizer/OutContainer" unique_id=1844232272]
+[node name="ViewBtn" type="Button" parent="Sizer" unique_id=1497355202]
+layout_mode = 0
+offset_left = 794.0
+offset_top = 550.0
+offset_right = 844.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 20
+
+[node name="ResetBtn" type="Button" parent="Sizer" unique_id=1956373364]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 550.0
+offset_right = 183.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 20
+
+[node name="ShuffleBtn" type="Button" parent="Sizer" unique_id=442914562]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 550.0
+offset_right = 293.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 20
+
+[node name="OutDialog" type="AcceptDialog" parent="Sizer" unique_id=1005592741]
+oversampling_override = 1.0
+title = ""
+position = Vector2i(0, 36)
+size = Vector2i(516, 557)
+
+[node name="OutContainer" type="ScrollContainer" parent="Sizer/OutDialog" unique_id=1158776081]
+custom_minimum_size = Vector2(500, 500)
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 508.0
+offset_bottom = 508.0
+
+[node name="Output" type="TextEdit" parent="Sizer/OutDialog/OutContainer" unique_id=1857651583]
+custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 text = "
 "
+editable = false
 
-[node name="Rotulos" type="Control" parent="Sizer" unique_id=1022308184]
+[node name="Tags" type="Control" parent="Sizer" unique_id=1022308184]
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 47.0
+offset_top = 77.0
+offset_right = 87.0
+offset_bottom = 117.0
 
-[node name="Org1" type="Label" parent="Sizer/Rotulos" unique_id=1447959430]
+[node name="Org1" type="Label" parent="Sizer/Tags" unique_id=1447959430]
 layout_mode = 0
-offset_left = 62.7023
-offset_top = 85.7197
-offset_right = 153.702
-offset_bottom = 99.7197
+offset_left = 48.0
+offset_top = 86.00001
+offset_right = 187.0
+offset_bottom = 114.00001
 text = "PRONOMBRES"
+label_settings = SubResource("LabelSettings_0xm2m")
 
-[node name="Org2" type="Label" parent="Sizer/Rotulos" unique_id=1689804270]
+[node name="Org2" type="Label" parent="Sizer/Tags" unique_id=1689804270]
 layout_mode = 0
-offset_left = 384.945
-offset_top = 87.3071
-offset_right = 475.945
-offset_bottom = 101.307
+offset_left = 370.2427
+offset_top = 86.0
+offset_right = 504.2427
+offset_bottom = 114.0
 text = "SUSTANTIVOS"
+label_settings = SubResource("LabelSettings_0xm2m")
 
-[node name="Org3" type="Label" parent="Sizer/Rotulos" unique_id=1613426319]
+[node name="Org3" type="Label" parent="Sizer/Tags" unique_id=1613426319]
 layout_mode = 0
-offset_left = 244.46
-offset_top = 87.3071
-offset_right = 335.46
-offset_bottom = 101.307
+offset_left = 229.7577
+offset_top = 86.0
+offset_right = 320.7577
+offset_bottom = 114.0
 text = "VERBOS"
+label_settings = SubResource("LabelSettings_0xm2m")
 
-[node name="Org4" type="Label" parent="Sizer/Rotulos" unique_id=62181078]
+[node name="Org4" type="Label" parent="Sizer/Tags" unique_id=62181078]
 layout_mode = 0
-offset_left = 560.353
-offset_top = 86.5134
-offset_right = 651.353
-offset_bottom = 100.513
+offset_left = 545.65076
+offset_top = 86.0
+offset_right = 647.65076
+offset_bottom = 114.0
 text = "ADJETIVOS"
+label_settings = SubResource("LabelSettings_0xm2m")
 
-[node name="Org5" type="Label" parent="Sizer/Rotulos" unique_id=2085310034]
+[node name="Org5" type="Label" parent="Sizer/Tags" unique_id=2085310034]
 layout_mode = 0
-offset_left = 724.649
-offset_top = 87.3071
-offset_right = 815.649
-offset_bottom = 101.307
+offset_left = 709.94666
+offset_top = 86.0
+offset_right = 802.94666
+offset_bottom = 114.0
 text = "VERBOS 2"
+label_settings = SubResource("LabelSettings_0xm2m")
 
-[node name="Org6" type="Label" parent="Sizer/Rotulos" unique_id=1923059739]
+[node name="Org6" type="Label" parent="Sizer/Tags" unique_id=1923059739]
 layout_mode = 0
-offset_left = 887.357
-offset_top = 86.5134
-offset_right = 978.357
-offset_bottom = 100.513
+offset_left = 872.65466
+offset_top = 86.0
+offset_right = 963.65466
+offset_bottom = 114.0
 text = "OTROS"
+label_settings = SubResource("LabelSettings_0xm2m")
+
+[node name="Words1" parent="Sizer" unique_id=824105024 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 202.0
+offset_right = 231.0
+offset_bottom = 504.0
+
+[node name="Words2" parent="Sizer" unique_id=146411815 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 202.0
+offset_right = 386.0
+offset_bottom = 504.0
+
+[node name="Words3" parent="Sizer" unique_id=1007164374 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 202.0
+offset_right = 551.0
+offset_bottom = 504.0
+
+[node name="Words4" parent="Sizer" unique_id=1111280109 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 202.0
+offset_right = 713.0
+offset_bottom = 504.0
+
+[node name="Words5" parent="Sizer" unique_id=1774812964 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+offset_left = 744.0
+offset_top = 202.0
+offset_right = 874.0
+offset_bottom = 504.0
+
+[node name="Words6" parent="Sizer" unique_id=198564156 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+offset_left = 900.0
+offset_top = 202.0
+offset_right = 1030.0
+offset_bottom = 504.0
 
 [connection signal="button_down" from="Sizer/Gen" to="Sizer" method="_on_Gen_button_down"]
+[connection signal="button_down" from="Sizer/ViewBtn" to="Sizer" method="_on_Gen_button_down"]

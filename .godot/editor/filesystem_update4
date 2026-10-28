@@ -1,2 +1,4 @@
 res://main.tscn
 res://Sizer.gd
+res://word_handler.gd
+res://wordHandler.tscn
